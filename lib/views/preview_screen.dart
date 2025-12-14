@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../models/text_data.dart';
 import 'widgets/character_count_display.dart';
 
@@ -22,10 +23,7 @@ class PreviewScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: Text(
                 textData.content,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.normal,
-                ),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
                 textAlign: TextAlign.left,
               ),
             ),

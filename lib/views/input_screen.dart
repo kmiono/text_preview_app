@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../controllers/text_controller.dart';
-import '../models/text_data.dart';
 import 'preview_screen.dart';
 import 'widgets/character_count_display.dart';
 
@@ -45,9 +45,10 @@ class _InputScreenState extends State<InputScreen> {
                 controller: _textEditingController,
                 maxLines: null,
                 keyboardType: TextInputType.multiline,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   hintText: 'ここに文章を入力してください',
-                  border: OutlineInputBorder(
+                  hintStyle: TextStyle(),
+                  border: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   ),
                 ),

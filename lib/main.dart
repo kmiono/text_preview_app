@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'controllers/text_controller.dart';
 import 'views/input_screen.dart';
@@ -22,9 +23,11 @@ class TextPreviewApp extends StatelessWidget {
             brightness: Brightness.light,
           ),
           useMaterial3: true,
-          appBarTheme: const AppBarTheme(
+          fontFamily: GoogleFonts.mPlus1p().fontFamily,
+          appBarTheme: AppBarTheme(
             backgroundColor: Colors.blue,
             foregroundColor: Colors.white,
+
             elevation: 0,
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
